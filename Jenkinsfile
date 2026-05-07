@@ -9,9 +9,14 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Test - unit') {
             steps {
-                sh 'echo Tests Passed'
+                sh 'echo Unit Tests Passed'
+            }
+        }
+        stage('Test - integration') {
+            steps {
+                sh 'echo Integration Tests Passed'
             }
         }
     }
