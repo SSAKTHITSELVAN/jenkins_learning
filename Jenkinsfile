@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Test - integration') {
             steps {
-                sh 'echo Integration Tests Passed'
+                sh 'echo Integration -  Tests Passed'
             }
         }
     }
